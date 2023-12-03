@@ -15,9 +15,9 @@
               <p class="card-text text-center">{{product.price}}€</p>
               <div class="d-flex justify-content-center align-items-center">
                 <div>
-                  <button type="button" class="btn btn-sm btn-primary">-</button>
-                  <span class="mx-2">0</span>
-                  <button type="button" class="btn btn-sm btn-primary">+</button>
+                  <button type="button" class="btn btn-sm btn-primary" [ngClass]="{'disabled': quantity === 0}" (click)="removeQuantity()">-</button>
+                  <span class="mx-2">{{quantity}}</span>
+                  <button type="button" class="btn btn-sm btn-primary" (click)="addQuantity()">+</button>
                 </div>
               </div>
             </div>

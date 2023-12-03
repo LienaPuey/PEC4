@@ -5,3 +5,7 @@
 .not-on-sale {
     background-color: lightgray;
 }
+.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
