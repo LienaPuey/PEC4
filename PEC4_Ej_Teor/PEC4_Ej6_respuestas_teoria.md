@@ -19,3 +19,8 @@ Se debe utilizar cuando la aplicación es más grande y se desea mejorar el rend
     * **Inconvenientes**: Puede requerir cambios en la forma en que se gestiona el estado y las actualizaciones de datos.
 
 # 5. Explica con detalle el ciclo de vida de los componentes. Haz hincapié en cuándo se disparan los hooks OnChanges, OnInit, AfterViewInit y OnDestroy, puesto que son los más utilizados.
+El ciclo de vida de un componente consta de una serie de eventos que ocurren desde la creación hasta la destrucción de un componente.
+* **OnInit**: Se dispara después de que Angular haya construido el componente. Se utiliza para inicializar datos y realizar operaciones que deben ejecutarse al inicio del ciclo de vida del componente.
+* **OnChanges**: Se dispara cuando el valor de una propiedad de entrada o `@Input()` cambia. Se utiliza para realizar acciones basadas en cambios en las propiedades de entrada.
+* **AfterViewInit**: Se dispara después de que Angular haya inicializado las vistas del componente y sus vistas secundarias. Se utiliza para realizar operaciones que requieren acceso a las vistas, como interactuar con elementos del DOM.
+* **OnDestroy**: Se dispara antes de que Angular destruya el componente. Se utiliza para liberar recursos, cancelar suscripciones y realizar otras tareas de limpieza antes de que el componente sea eliminado.
