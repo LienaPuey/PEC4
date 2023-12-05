@@ -20,7 +20,7 @@ import { ArticleQuantityChange } from '../article';
 export class ArticleListComponent {
   articles:Article[]=[
     {id: 1, name: "Camiseta de mujer",  imageUrl:'../../assets/camiseta_mujer.jpeg', price: 12.50, isOnSale: true, quantityInCart: 0},
-    {id: 2, name: "Pantalones vaqueros",  imageUrl:'../../assets/vaqueros.jpg', price: 25, isOnSale: true, quantityInCart: 0},
+    {id: 2, name: "Pantalones vaqueros",  imageUrl:'../../assets/vaqueros.jpg', price: 25, isOnSale: false, quantityInCart: 0},
     {id: 3, name: "Zapatillas",  imageUrl:'../../assets/zapatillas.PNG', price: 35, isOnSale: true, quantityInCart: 0}
   ]
 
